@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    // Bot Detection
+    const ua = navigator.userAgent.toLowerCase();
+    const isBot = /bot|crawl|spider|slurp|headless|facebook|discord|preview|telegram/i.test(ua);
+
+    // Iframe Detection
+    const isInIframe = window !== window.top;
+
+    if (isBot || isInIframe) {
+      // Block bots or iframe traffic
+      document.write("⚠️ Access Denied – Suspicious Traffic Detected.");
+    } else {
+      // Redirect clean human traffic to Adsterra
+      window.location.href = "https://www.profitableratecpm.com/qby2e4k58?key=ad94e0632013389b6dfb3809a5ac1736";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to offer... Please wait.</p>
+</body>
+</html>
